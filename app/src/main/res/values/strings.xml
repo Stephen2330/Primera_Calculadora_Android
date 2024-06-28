@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Calculadora Kevsiana</string>
+    <string name="BotonAnterior">Regresar</string>
+    <string name="suma">Sumar</string>
+    <string name="resta">Restar</string>
+    <string name="multiplica">Multiplicar</string>
+    <string name="divide">Dividir</string>
+    <string name="titulo_pantalla_principal">Calculadora del Kevso</string>
+    <string name="titulo">Calculadora</string>
+    <string name="resultado">Resultado</string>
+    <string name="ingrese_primer_valor">Ingrese primer valor</string>
+    <string name="ingrese_segundo_valor">Ingrese segundo valor</string>
+    <string name="BotonSiguiente">Siguiente</string>
+    <string name="titulo_pantalla_inicio">Calculadora básica</string>
+    <string name="subtitulo_pantalla_inicio">Calculadora del Kevso</string>
+</resources>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/valor1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+
+    <EditText
+        android:id="@+id/v1"
+        android:layout_width="396dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="@string/ingrese_primer_valor"
+        android:inputType="number"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/v2"
+        android:layout_width="396dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="@string/ingrese_segundo_valor"
+        android:inputType="number"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/v1" />
+
+    <TextView
+        android:id="@+id/tvResultado"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/resultado"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/v2" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="189dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="20dp"
+        android:enabled="false"
+        android:onClick="btnsuma"
+        android:text="@string/suma"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.063"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvResultado" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="170dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="20dp"
+        android:enabled="false"
+        android:onClick="btnresta"
+        android:text="@string/resta"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toEndOf="@+id/button1"
+        app:layout_constraintTop_toBottomOf="@+id/tvResultado" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="188dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="100dp"
+        android:enabled="false"
+        android:onClick="btnmulti"
+        android:text="@string/multiplica"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.063"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvResultado" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="165dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="100dp"
+        android:enabled="false"
+        android:onClick="btndivision"
+        android:text="@string/divide"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.615"
+        app:layout_constraintStart_toEndOf="@+id/button3"
+        app:layout_constraintTop_toBottomOf="@+id/tvResultado" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="399dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/titulo"
+        android:textAlignment="center"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="403dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/titulo_pantalla_principal"
+        android:textAlignment="center"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.991"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="36dp"
+        android:onClick="anterior"
+        android:text="@string/BotonAnterior"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
